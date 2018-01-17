@@ -13,8 +13,4 @@ $y = 6;
 $z = $x + $y;
 
 echo $z;
-
-function myTest(){
-
-}
 ?>
