@@ -18,4 +18,13 @@ function myTest()
 myTest();
 
 echo "$x $y";
+echo "<br>";
+function myTest1()
+{
+    $GLOBALS['x'] = 500;
+    $GLOBALS['y'] = 1000;
+}
+
+myTest1();
+echo "$x $y";
 ?>
