@@ -16,6 +16,7 @@ echo "<hr>";
 //如果在字符串中找到匹配，该函数会返回第一个匹配的字符位置。如果未找到匹配，则返回 FALSE。
 echo "index of 'w' is: " . strpos("hello world", 'w');
 echo "<hr>";
-echo "index of 'a' is: " . strpos("hello world", 'a');
+echo "index of 'a' is: ";
+var_dump(strpos("hello world", 'a'));
 
 
