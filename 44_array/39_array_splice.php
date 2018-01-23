@@ -15,4 +15,5 @@ $a2 = array("a" => "purple", "b" => "orange");
 array_splice($a1, 0, 2, $a2);
 print_r($a1);   //Array ( [0] => purple [1] => orange [c] => blue [d] => yellow )
 
+
 ?>
