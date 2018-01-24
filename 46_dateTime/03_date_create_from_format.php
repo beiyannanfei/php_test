@@ -6,6 +6,7 @@
  * Time: 下午5:49
  */
 
+//date_create_from_format() 函数返回一个根据指定格式进行格式化的新的 DateTime 对象。
 $date = date_create_from_format("j-M-Y", "15-Mar-2013");
 echo "<pre>";
 print_r($date);
