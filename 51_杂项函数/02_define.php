@@ -14,6 +14,7 @@
 
 define("GREETING", "Hello you! How are you today?");
 echo GREETING . "<br>";
+
 //定义一个大小写不敏感的常量：
 define("GREETING", "Hello you! How are you today?", TRUE);
 echo greeting;
