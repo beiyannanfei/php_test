@@ -15,5 +15,4 @@ if (!filter_var("someone@example....com", FILTER_VALIDATE_EMAIL)) {
     echo("E-mail is valid");
 }
 
-
 ?>
