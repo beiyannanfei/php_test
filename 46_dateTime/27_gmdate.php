@@ -9,4 +9,5 @@
 echo gmdate("Y-m-d H:i:s") . "<br>"; //2018-01-25 04:10:04
 date_default_timezone_set("Asia/Shanghai");
 echo gmdate("Y-m-d H:i:s"); //2018-01-25 04:10:52
+
 ?>
