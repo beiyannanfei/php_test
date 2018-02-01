@@ -53,12 +53,15 @@ var_dump(is_string(123));
 echo "<br>";
 
 var_dump(memory_get_usage());   //获取内存
-
-
 echo "<br>";
 
+var_dump(in_array("TT", $arr)); //判断数组中是否存在查找值，返回bool值
 echo "<br>";
+
+include "./52_String/58_substr.php";    //截取字符串
 echo "<br>";
+
+include "./52_String/60_substr_count.php";  //统计字符串出现次数
 echo "<br>";
 echo "<br>";
 echo "<br>";
