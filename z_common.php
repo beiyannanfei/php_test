@@ -63,9 +63,15 @@ echo "<br>";
 
 include "./52_String/60_substr_count.php";  //统计字符串出现次数
 echo "<br>";
-echo "<br>";
-echo "<br>";
+
+print_r(pathinfo("http://www.w3school.com.cn/php/abc.asp"));    //解析
 echo "<br>";
 
+var_dump(strval(123));  //number 2 string
+echo "<br>";
 
+var_dump(intval("123"));    //string 2 number
+echo "<br>";
+
+include "./44_array/36_array_search.php";   //查找数组中某个值得索引
 ?>
