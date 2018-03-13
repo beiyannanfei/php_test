@@ -23,6 +23,6 @@ options: 二进制掩码，目前只支持 JSON_BIGINT_AS_STRING 。
 $json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
 
 var_dump(json_decode($json));
-var_dump(json_decode($json, true));
+var_dump(json_decode($json, true)); //assoc　　当该参数为 TRUE 时，将返回 array 而非 objec
 
 ?>
