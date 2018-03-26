@@ -7,7 +7,8 @@
  */
 
 $sites = array("Google", "Runoob", "Taobao", "Facebook");
-
+var_dump(in_array("Runoob0", $sites));
+echo '<br>';
 if (in_array("Runoob", $sites)) {
     echo "找到匹配项！";  //找到匹配项！
 } else {

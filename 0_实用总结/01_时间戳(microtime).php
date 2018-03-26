@@ -13,6 +13,6 @@ echo "<br>";
 //当设置为 TRUE 时，规定函数应该返回浮点数，否则返回字符串。默认为 FALSE
 $timestamp = microtime(true);
 var_dump($timestamp); //float(1520999604.8798)
-
+var_dump(intval($timestamp));
 
 ?>

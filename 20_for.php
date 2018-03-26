@@ -15,3 +15,13 @@ foreach ($x as $value) {
     echo $value . "<br>";
 }
 echo "<hr>";
+
+$l = 0;
+for (; ;) {
+    echo $l . "<br>";
+    $l++;
+    if ($l > 5) {
+        break;
+    }
+}
+echo "last value: $l";
