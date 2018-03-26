@@ -89,6 +89,14 @@ echo '获取本月开始时间戳<br>';
 echo '当前时间: ' . date("Y-m-d H:i:s", time()) . '<br>';
 $month = strtotime(date("Y-m"), time());//获得当月凌晨的时间戳
 echo '今天开始时间戳: ' . $month . '<br>';
-echo '验证一下：' . date("Y-m-d H:i:s", $month) . '<br>';
+echo '验证一下：' . date("Y-m-d H:i:s", $month) . '<hr>';
 
+
+$beginToday = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
+$endToday = mktime(0, 0, 0, date('m'), date('d') + 1, date('Y')) - 1;
+echo '获取今天开始时间戳的另一个方法: ' . $beginToday . ' endToday: ' . $endToday . '<hr>';
+
+$beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
+$endThismonth = mktime(23, 59, 59, date('m'), date('t'), date('Y'));
+echo '获取本月的开始和结束时间戳: ' . $beginThismonth . ' endmonth: ' . $endThismonth . '<hr>';
 ?>
