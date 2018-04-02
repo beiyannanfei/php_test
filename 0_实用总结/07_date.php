@@ -99,4 +99,9 @@ echo '获取今天开始时间戳的另一个方法: ' . $beginToday . ' endToda
 $beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
 $endThismonth = mktime(23, 59, 59, date('m'), date('t'), date('Y'));
 echo '获取本月的开始和结束时间戳: ' . $beginThismonth . ' endmonth: ' . $endThismonth . '<hr>';
+
+//
+$endMonthBefore1Hour = mktime(0, 0, 0, date('m') + 1, 1, date('Y')) - 3600;
+echo '本月结束前一个小时：' . $endMonthBefore1Hour . '<br>';
+echo '验证一下：' . date("Y-m-d H:i:s", $endMonthBefore1Hour) . '<hr>';
 ?>
