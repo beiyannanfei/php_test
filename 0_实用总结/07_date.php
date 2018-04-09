@@ -104,4 +104,8 @@ echo '获取本月的开始和结束时间戳: ' . $beginThismonth . ' endmonth:
 $endMonthBefore1Hour = mktime(0, 0, 0, date('m') + 1, 1, date('Y')) - 3600;
 echo '本月结束前一个小时：' . $endMonthBefore1Hour . '<br>';
 echo '验证一下：' . date("Y-m-d H:i:s", $endMonthBefore1Hour) . '<hr>';
+
+$endMonthBefore1Day = mktime(0, 0, 0, date('m') + 1, 1, date('Y')) - 24 * 3600;
+echo '本月结束前一天：' . $endMonthBefore1Day . '<br>';
+echo '验证一下：' . date("Y-m-d H:i:s", $endMonthBefore1Day) . '<hr>';
 ?>
