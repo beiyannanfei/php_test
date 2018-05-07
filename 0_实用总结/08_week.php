@@ -36,14 +36,15 @@ echo '<hr>';
 //echo date('Y-m-d H:i:s', strtotime('+2 monday', time()));
 //echo '<br>';
 
-$date = mktime(20, 45, 37, date('m'), date('d') + 7, date('Y'));
+$date = mktime(20, 45, 37, date('m'), date('d')+4, date('Y'));
 echo date("Y-m-d H:i:s", $date);
 echo '<br>';
-echo date('Y-m-d H:i:s', strtotime('+1 sunday', $date) + 24 * 3600);
-
-echo '<hr>';
+echo date('Y-m-d H:i:s', strtotime('-1 sunday', $date) + 24 * 3600);
+echo '<br>';
+echo date('Y-m-d H:i:s');
+/*echo '<hr>';
 $nextC = strtotime('+1 sunday', time()) + 24 * 3600;
 echo $nextC . "<br>";
-echo date('Y-m-d H:i:s', $nextC);
+echo date('Y-m-d H:i:s', $nextC);*/
 
 
