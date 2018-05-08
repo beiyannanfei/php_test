@@ -22,5 +22,3 @@ test($arr);
 var_dump($arr);
 
 //aaaaa
-
-//bbbbb
