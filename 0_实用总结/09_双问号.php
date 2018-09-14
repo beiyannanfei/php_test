@@ -19,8 +19,11 @@ $h = 0;
 $i = $h ?? "45rf";
 var_dump($i);       //0
 
+echo '<hr>';
 
-
+$friendRedDetail = array('begCount' => true, 'voucherCount' => false);
+$flag = $friendRedDetail['begCount'] ? $friendRedDetail['begCount'] : $friendRedDetail['voucherCount'];
+var_dump($flag);
 
 
 

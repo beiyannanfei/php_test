@@ -15,5 +15,6 @@ $a2 = array("c" => "blue", "b" => "yellow");
 //提示：该函数与 array_merge_recursive() 函数之间的不同是在处理两个或更多个数组元素有相同的键名的情况。
 //array_merge_recursive() 不会进行键名覆盖，而是将多个相同键名的值递归组成一个数组。
 print_r(array_merge($a1, $a2)); //Array ( [a] => red [b] => yellow [c] => blue )
-
+print_r($a1);
+print_r($a2);
 ?>

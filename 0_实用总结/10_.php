@@ -1,26 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wyq
- * Date: 2018/5/7
- * Time: 上午10:48
- */
 
-/**
- * @param $arr
- */
-function test(&$arr)
-{
-    $arr['a'] = 10;
+$str = "111_100,201_100";
+
+$arr = array_map(function ($item) {
+    return explode("_", $item);
+}, explode(",", $str));
+
+var_dump($arr);
+
+print '<hr>';
+
+foreach ($arr as $item) {
+    $templateId = $item[0];
+    $itemCount = $item[1];
+    echo $templateId;
+    echo $itemCount;
+    print '<br>';
 }
-
-$arr = array('b' => 20);
-
-var_dump($arr);
-echo '<br>';
-test($arr);
-var_dump($arr);
-
-//aaaa
-
-//cccc
