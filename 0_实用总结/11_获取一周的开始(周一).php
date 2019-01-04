@@ -1,0 +1,65 @@
+<?php
+date_default_timezone_set("Asia/Shanghai");
+
+//$time = time();
+
+//$time = strtotime("2018-12-22 15:34:03");
+//$time = strtotime("2018-12-23 15:34:03");
+//$time = strtotime("2018-12-24 15:34:03");
+//$time = strtotime("2018-12-25 15:34:03");
+//$time = strtotime("2018-12-26 15:34:03");
+//$time = strtotime("2018-12-27 15:34:03");
+//$time = strtotime("2018-12-28 15:34:03");
+//$time = strtotime("2018-12-29 15:34:03");
+//$time = strtotime("2018-12-30 15:34:03");
+//$time = strtotime("2018-12-31 15:34:03");
+//$time = strtotime("2019-01-01 15:34:03");
+//$time = strtotime("2019-01-02 15:34:03");
+//$time = strtotime("2019-01-03 15:34:03");
+//$time = strtotime("2019-01-04 15:34:03");
+//$time = strtotime("2019-01-05 15:34:03");
+//$time = strtotime("2019-01-06 15:34:03");
+//$time = strtotime("2019-01-07 15:34:03");
+//$time = strtotime("2019-01-08 15:34:03");
+//$time = strtotime("2019-01-09 15:34:03");
+//$time = strtotime("2019-01-10 15:34:03");
+$time = strtotime("2019-01-11 15:34:03");
+//$time = strtotime("2019-01-12 15:34:03");
+//$time = strtotime("2019-01-13 15:34:03");
+//$time = strtotime("2019-01-14 15:34:03");
+//$time = strtotime("2019-01-15 15:34:03");
+//$time = strtotime("2019-01-16 15:34:03");
+//$time = strtotime("2019-01-17 15:34:03");
+//$time = strtotime("2019-01-18 15:34:03");
+//$time = strtotime("2019-01-19 15:34:03");
+//$time = strtotime("2019-01-20 15:34:03");
+//$time = strtotime("2019-01-21 15:34:03");
+//$time = strtotime("2019-01-22 15:34:03");
+//$time = strtotime("2019-01-23 15:34:03");
+//$time = strtotime("2019-01-24 15:34:03");
+//$time = strtotime("2019-01-25 15:34:03");
+//$time = strtotime("2019-01-26 15:34:03");
+//$time = strtotime("2019-01-27 15:34:03");
+//$time = strtotime("2019-01-28 15:34:03");
+//$time = strtotime("2019-01-29 15:34:03");
+//$time = strtotime("2019-01-30 15:34:03");
+//$time = strtotime("2019-01-31 15:34:03");
+//$time = strtotime("2019-02-01 15:34:03");
+//$time = strtotime("2019-02-02 15:34:03");
+//$time = strtotime("2019-02-03 15:34:03");
+$time = strtotime("2019-02-04 15:34:03");
+$sdefaultDate = date("Y-m-d", $time);
+$w = date('w', strtotime($sdefaultDate));
+echo $w . "<br>";
+$diff = "$sdefaultDate -" . ($w ? $w - 1 : 6) . ' days';
+echo $diff . "<br>";
+$week_start = date('Y-m-d', strtotime($diff));
+echo $week_start . '<br>';
+
+$last_week_start = date('Y-m-d', strtotime("$week_start -7 days"));
+echo $last_week_start . '<br>';
+echo '============================================<br>';
+
+//$timeStr = date("Y-m-d H:i:s", $time);
+//$timeStape = strtotime($timeStr);
+//echo '$time = ' . $time . ' $timeStr = ' . $timeStr . ' $timeStape = ' . $timeStape . '<br>';
